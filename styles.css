@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: lightgray;
+}
+
+#container{
+    /*width: 70%;*/
+    width: 1100px;
+    margin: 0px auto;
+    /*border: 1px solid red;*/
+}
+
+header{
+    background-color: #0099A8;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height: 100px;
+    border-bottom: 3px dashed #000;
+}
+
+nav{
+    background: #7AB0A9;
+    height: 50px;
+    border-bottom: 1px;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+#content{
+    float: left;
+    width: 80%;
+    background: #007E8B;
+}
+
+.slider-box{
+    width: 1080px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 300%;
+    animation: slide 12s infinite ease-in-out;
+}
+
+.slider-box li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.slider-box img{
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slide{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    45% {margin-left: -100%;}
+    25% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+}
+
+
+/*Flexbox manual*/
+
+#Misión-visión-valores{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto 0;
+    width: 80%;
+    gap: 30px; /*Espaciado entre texto*/
+}
+
+#Misión-visión-valores p{
+    text-align: justify;
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/*Carpeta evento*/
+#Eventos-proximos{
+    display:grid;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto 0;
+    width: 80%;
+    gap: 30px; /*Espaciado entre texto*/
+}
+/*Carpeta registros*/
+
+#registros{
+    margin: 50px auto;
+    width: 60%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#registros h2{
+    text-align: center;
+    color: #007E8B;
+}
+
+#registro label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+#registro input, #registro select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#registro input:focus, #registro select:focus {
+    border-color: #007E8B;
+    outline: none;
+}
+
+.checkbox-group label {
+    display: block;
+    margin: 5px 0;
+}
+
+#registro button {
+    width: 100%;
+    padding: 10px;
+    background: #007E8B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#registro button:hover {
+    background: #005f6b;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de eventos</title>
+
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div id="container">
+        <header> <h1> Universidad Americana UAM </h1></header>
+        <br>
+        <p>Bienvenidos a la Universidad Americana UAM en Managua, Nicaragua.</p>
+        <br>
+        <nav>
+            <ul>
+                
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/eventos.html">Eventos</a></li>
+                <li><a href="/registros.html">Registros</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+            </ul>
+            
+        </nav>
+
+        <div class = "clearfix"></div>
+        <br>
+
+        <section id="Registro">
+            <h2>Registro de Eventos</h2>
+            <br><br>
+                <form id ="RegistroForm">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" 
+                    placeholder="Ingresa tu nombre completo" required>
+                    <br><br>
+
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" 
+                    placeholder="ejemplo@uamv.edu.ni" required>
+                    <br><br>
+
+                    <label for= "carrera">Carrera:</label>
+                    <select id="carrera" name="carrera" required>
+                        <option value="">Selecciona tu carrera</option>
+                        <option value="Ingenieria en Sistemas">Ingeniería en Sistemas</option>
+                        <option value="Administracion de Empresas">Administración de Empresas</option>
+                        <option value="Derecho">Derecho</option>
+                        <option value="Psicologia">Psicología</option>
+                    </select>
+                    <br><br>
+
+                    <label>Conferencias a las que deseas asistir:</label>
+                    <br><br>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="conferencias" 
+                            value="Github">Uso de GitHub en proyectos colaborativos.
+                        </label>
+                        <label><input type="checkbox" name="conferencias" 
+                            value="Docker">Introducción a Docker para entornos de desarrollo.
+                        </label>
+                        <label><input type="checkbox" name="conferencias" 
+                            value="Linux">Configuración básica de servidores Linux
+                        </label>
+                    </div>
+                    <br><br>
+
+                    <button type="submit">Registrar</button>
+
+                </form>
+        </section>
+        <div class = "clearfix"></div>
+        <br>
+
+        <script src="script.js"></script>
+</body>
+</html>
