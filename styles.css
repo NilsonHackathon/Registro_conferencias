@@ -49,9 +49,21 @@ nav ul li{
     background: #007E8B;
 }
 
+/* Cambiar tamaño de foto2 */
+img[alt="Foto 2"] {
+    width: 80%; 
+    height: 540px; 
+}
+
+/* Cambiar tamaño de foto3 */
+img[alt="Foto 3"] {
+    width: 50%; 
+    height: 540px; 
+}
+
 .slider-box{
     width: 1080px;
-    height: auto;
+    /*height: auto;*/
     margin: 50px auto 0;
     overflow: hidden;
 }
@@ -72,7 +84,7 @@ nav ul li{
 
 .slider-box img{
     width: 100%;
-    height: auto;
+    /*height: auto;*/
 }
 
 @keyframes slide{
